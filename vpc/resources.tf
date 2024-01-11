@@ -77,7 +77,7 @@ resource "aws_route_table_association" "public_subnets_association" {
 
 resource "aws_eip" "eip" {
   domain               = "vpc"
-  network_border_group = data.aws_region.available.name
+  network_border_group = var.aws_region_name
   tags = merge(
     local.common_tags,
     {
