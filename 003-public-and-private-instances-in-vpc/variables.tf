@@ -14,7 +14,7 @@ variable "vpc_cidr" {
   }
 }
 
-variable "stack_name" {
+variable "app_name" {
   type    = string
   default = "test"
 }
